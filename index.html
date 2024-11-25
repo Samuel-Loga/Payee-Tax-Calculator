@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYE Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PAYE Calculator</h1>
+    <form id="payeForm">
+      <label for="grossPay">Gross Pay (MK):</label>
+      <input type="number" id="grossPay" name="grossPay" placeholder="Enter your gross pay" required>
+      
+      <button type="button" id="calculateButton">Calculate</button>
+    </form>
+    
+    <div id="results" class="hidden">
+      <h2>Results</h2>
+      <p><strong>Gross Pay:</strong> MK <span id="resultGrossPay"></span></p>
+      <p><strong>PAYE Deduction:</strong> MK <span id="resultDeduction"></span></p>
+      <p><strong>Net Pay:</strong> MK <span id="resultNetPay"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
